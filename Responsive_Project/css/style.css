@@ -1,29 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS RESET*/
+
+body{
+    padding: 20px;
+    margin: 0px;
+    background-color: #819FF7;
+}
+
 #banner{
     background-image: url(../img/banner.jpg);
     opacity: 0.5;
     display: block;
     width: 100%;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 #menu{
     width: 100;
     height: 4em;
-    background-color: aquamarine;
+    background-color: #D8D8D8;
     border: solid 2px black;
+    margin-bottom: 20px;
 }
 
 .menu_item{
-    width: 24%;
+    width: auto;
     height: inherit;
-    float: left;
     list-style: none;
     text-align: center;
-    font-family: "Arial Black";
     font-size: 3em;
     border-right: outset 2px black;
 }
 
 li.last{
     border-right: none;
+}
+
+div.li_container{
+    padding-top: 9px;
+    width:24%;
+    display: inline-block;
+    margin: 0px;
+    float: left;
+    overflow: hidden;
+}
+
+div.block_images{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+div.block_images img{
+    width: 47%;
+    display: inline;
+    margin: 20px;
+}
+
+div.parrafos_cont{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+span.parrafo{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    width: 31%;
+    margin: 0px 10px;
+}
+
+span.parrafo p{
+    font-size: 20px;
+}
+
+div.cuadro_color{
+    width:25%;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    display: inline;
+    position: absolute;
+}
+
+div.color1{
+    background-color: #FA732A;
+}
+
+div.color2{
+    background-color: #B0A62B;
+    left: 22%;
+    margin-top: 30px;
+}
+div.color3{
+    background-color: #35B02B;
+    left: 44%;
+    margin-top: 50px;
+}
+div.color4{
+    background-color: #384BC3;
+    left: 66%;
+    margin-top: 70px;
+}
+
+.back_top{
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    z-index: 1;
+    width: 15%;
+}
+
+
+.back_top button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.back_top button a{
+    color:black;
+    text-decoration: none;
+}
+
+.back_top button a:visited{
+    color:black;
+    text-decoration: none;
 }
